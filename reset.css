@@ -1,0 +1,102 @@
+/**
+ * DM Kishi's Custom CSS Reset
+ * v1.0.0
+ * <https://github.com/dmkishi/css-reset/>
+ *
+ * ```css
+ *   @import url('reset.css') layer(reset);
+ * ```
+ *
+ * Taken from:
+ * - <https://www.joshwcomeau.com/css/custom-css-reset/>
+ * - <https://piccalil.li/blog/a-more-modern-css-reset/>
+ */
+
+/* Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins */
+* {
+  margin: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  /* Add accessible line-height */
+  line-height: 1.5;
+
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make media easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Opt-in to decorated lists */
+ol,
+ul {
+  list-style: none;
+}
