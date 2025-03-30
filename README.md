@@ -16,6 +16,10 @@ Usage
 
 Changelog
 --------------------------------------------------------------------------------
+### v1.1.1 (2025-3-30)
+#### Others
+- Fix missing "description" property.
+
 ### v1.1.0 (2025-3-30)
 #### Features
 - Add rule for `<address>`.

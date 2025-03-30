@@ -1,6 +1,7 @@
 {
   "name": "@dmkishi/css-reset",
-  "version": "1.1.0",
+  "version": "1.1.1",
+  "description": "DM Kishi's custom CSS reset",
   "scripts": {
     "lint": "npx stylelint reset.css",
     "prepare": "husky"
