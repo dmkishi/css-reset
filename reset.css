@@ -12,6 +12,9 @@
  * - <https://piccalil.li/blog/a-more-modern-css-reset/>
  */
 
+/*******************************************************************************
+ * Global
+ ******************************************************************************/
 /* Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -24,6 +27,9 @@
   margin: 0;
 }
 
+/*******************************************************************************
+ * Layout
+ ******************************************************************************/
 /* Prevent font size inflation */
 html {
   -moz-text-size-adjust: none;
@@ -39,6 +45,19 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Make media easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*******************************************************************************
+ * Text
+ ******************************************************************************/
 /* Set shorter line heights on headings and interactive elements */
 h1,
 h2,
@@ -85,16 +104,9 @@ select {
   font-size: inherit;
 }
 
-/* Make media easier to work with */
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
+/*******************************************************************************
+ * Other
+ ******************************************************************************/
 /* Opt-in to decorated lists */
 ol,
 ul {
