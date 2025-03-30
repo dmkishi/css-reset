@@ -4,16 +4,24 @@ CSS Reset
 
 Install
 --------------------------------------------------------------------------------
-Download or copy and paste the [CSS file](https://github.com/dmkishi/css-reset/blob/main/reset.css).
+```sh
+npm install @dmkishi/css-reset
+```
 
 Usage
 --------------------------------------------------------------------------------
 ```css
-@import url('reset.css') layer(reset);
+@import '@dmkishi/css-reset/reset.css' layer(reset);
 ```
 
 Changelog
 --------------------------------------------------------------------------------
+### v1.1.0 (2025-3-30)
+#### Features
+- Add rule for `<address>`.
+#### Others
+- Add support for NPM.
+
 ### v1.0.0 (2025-3-28)
 Initial release.
 
