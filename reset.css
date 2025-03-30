@@ -15,7 +15,7 @@
 /*******************************************************************************
  * Global
  ******************************************************************************/
-/* Use a more-intuitive box-sizing model */
+/* Use a more-intuitive box-sizing model. */
 *,
 *::before,
 *::after {
@@ -30,7 +30,7 @@
 /*******************************************************************************
  * Layout
  ******************************************************************************/
-/* Prevent font size inflation */
+/* Prevent font size inflation. */
 html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
@@ -38,14 +38,14 @@ html {
 }
 
 body {
-  /* Add accessible line-height */
+  /* Add accessible line-height. */
   line-height: 1.5;
 
-  /* Improve text rendering */
+  /* Improve text rendering. */
   -webkit-font-smoothing: antialiased;
 }
 
-/* Make media easier to work with */
+/* Make media easier to work with. */
 img,
 picture,
 video,
@@ -58,7 +58,7 @@ svg {
 /*******************************************************************************
  * Text
  ******************************************************************************/
-/* Set shorter line heights on headings and interactive elements */
+/* Set shorter line heights on headings and interactive elements. */
 h1,
 h2,
 h3,
@@ -69,7 +69,7 @@ label {
   line-height: 1.1;
 }
 
-/* Avoid text overflows */
+/* Avoid text overflows. */
 p,
 h1,
 h2,
@@ -80,12 +80,12 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* Improve line wrapping */
+/* Improve line wrapping. */
 p {
   text-wrap: pretty;
 }
 
-/* Balance text wrapping on headings */
+/* Balance text wrapping on headings. */
 h1,
 h2,
 h3,
@@ -95,7 +95,7 @@ h6 {
   text-wrap: balance;
 }
 
-/* Inherit fonts for inputs and buttons */
+/* Inherit fonts for inputs and buttons. */
 input,
 button,
 textarea,
@@ -107,7 +107,7 @@ select {
 /*******************************************************************************
  * Other
  ******************************************************************************/
-/* Opt-in to decorated lists */
+/* Opt-in to decorated lists. */
 ol,
 ul {
   list-style: none;
