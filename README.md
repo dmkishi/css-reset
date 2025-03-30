@@ -6,28 +6,38 @@ Install
 --------------------------------------------------------------------------------
 ```sh
 npm install @dmkishi/css-reset
+pnpm add @dmkishi/css-reset
 ```
 
 Usage
 --------------------------------------------------------------------------------
+CSS imports from `node_modules` requires a bundler such as Vite or
+[`postcss-import`](https://www.npmjs.com/package/postcss-import).
+
 ```css
 @import '@dmkishi/css-reset/reset.css' layer(reset);
 ```
 
+Develop
+--------------------------------------------------------------------------------
+1. Install: `git clone https://github.com/dmkishi/css-reset.git && pnpm install`
+1. Edit and lint with `pnpm lint`
+1. Update version numbers and changelog and commit
+1. Publish: `git push && pnpm publish`
+   - Both actions run the linter and builder as necessary.
+
 Changelog
 --------------------------------------------------------------------------------
+### v1.2.0 (2026-4-3)
 ### v1.1.1 (2025-3-30)
-#### Others
 - Fix missing "description" property.
 
 ### v1.1.0 (2025-3-30)
-#### Features
 - Add rule for `<address>`.
-#### Others
 - Add support for NPM.
 
 ### v1.0.0 (2025-3-28)
-Initial release.
+- Initial release.
 
 Acknowledgments
 --------------------------------------------------------------------------------
