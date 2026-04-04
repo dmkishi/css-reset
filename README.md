@@ -15,7 +15,7 @@ CSS imports from `node_modules` requires a bundler such as Vite or
 [`postcss-import`](https://www.npmjs.com/package/postcss-import).
 
 ```css
-@import '@dmkishi/css-reset/reset.css' layer(reset);
+@import '@dmkishi/css-reset/dist/reset.css' layer(reset);
 ```
 
 Develop
