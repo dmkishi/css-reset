@@ -29,6 +29,10 @@ Develop
 Changelog
 --------------------------------------------------------------------------------
 ### v1.2.0 (2026-4-3)
+- Add preserve comment w/ project name, version, and link to reset CSS.
+- Switch to PNPM.
+- Improve README.
+
 ### v1.1.1 (2025-3-30)
 - Fix missing "description" property.
 
