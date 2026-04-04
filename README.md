@@ -28,6 +28,10 @@ Develop
 
 Changelog
 --------------------------------------------------------------------------------
+### v1.2.2 (2026-4-4)
+- Fix usage example in README.
+- Remove `<ol>` reset.
+
 ### v1.2.1 (2026-4-3)
 - Set publishConfig access to public for scoped package.
 
