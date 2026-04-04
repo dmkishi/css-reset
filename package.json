@@ -4,11 +4,12 @@
   "description": "DM Kishi's custom CSS reset",
   "homepage": "https://github.com/dmkishi/css-reset",
   "author": "DM Kishi <dm.kishi@gmail.com>",
+  "packageManager": "pnpm@10.24.0",
   "scripts": {
     "build": "node build.mjs",
-    "lint": "npx stylelint src/reset.css",
-    "prepare": "husky",
-    "prepublishOnly": "npm run lint && npm run build"
+    "lint": "pnpm exec stylelint src/reset.css",
+    "prepare": "pnpm exec husky",
+    "prepublishOnly": "pnpm lint && pnpm build"
   },
   "devDependencies": {
     "@stylistic/stylelint-config": "^2.0.0",

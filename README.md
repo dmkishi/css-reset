@@ -5,8 +5,8 @@ CSS Reset
 Install
 --------------------------------------------------------------------------------
 ```sh
-npm install @dmkishi/css-reset
 pnpm add @dmkishi/css-reset
+npm install @dmkishi/css-reset
 ```
 
 Usage
