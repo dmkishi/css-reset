@@ -28,6 +28,9 @@ Develop
 
 Changelog
 --------------------------------------------------------------------------------
+### v1.2.1 (2026-4-3)
+- Set publishConfig access to public for scoped package.
+
 ### v1.2.0 (2026-4-3)
 - Add preserve comment w/ project name, version, and link to reset CSS.
 - Switch to PNPM.

@@ -1,6 +1,6 @@
 {
   "name": "@dmkishi/css-reset",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "DM Kishi's custom CSS reset",
   "homepage": "https://github.com/dmkishi/css-reset",
   "author": "DM Kishi <dm.kishi@gmail.com>",
@@ -18,5 +18,8 @@
     "stylelint": "^16.17.0",
     "stylelint-config-standard": "^37.0.0"
   },
-  "files": ["dist/reset.css"]
+  "files": ["dist/reset.css"],
+  "publishConfig": {
+    "access": "public"
+  }
 }
