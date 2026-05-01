@@ -101,4 +101,5 @@ address {
 /* Opt-in to decorated lists. */
 ul {
   list-style: none;
+  padding: 0;
 }
