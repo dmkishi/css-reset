@@ -25,6 +25,7 @@ Develop
 1. Update version numbers and changelog and commit
 1. Publish: `git push && pnpm publish`
    - Both actions run the linter and builder as necessary.
+   - If you are not logged in, `pnpm login`
 
 Changelog
 --------------------------------------------------------------------------------
