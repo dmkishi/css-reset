@@ -29,6 +29,10 @@ Develop
 
 Changelog
 --------------------------------------------------------------------------------
+### v1.3.0 (2026-5-1)
+- Add padding reset to `<ul>`.
+- Improve README.
+
 ### v1.2.2 (2026-4-4)
 - Fix usage example in README.
 - Remove `<ol>` reset.
