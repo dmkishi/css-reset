@@ -4,13 +4,13 @@ CSS Reset
 
 Install
 --------------------------------------------------------------------------------
+### Add this package to your project
 ```sh
 pnpm add @dmkishi/css-reset
 npm install @dmkishi/css-reset
 ```
 
-Usage
---------------------------------------------------------------------------------
+### Add this reset to your CSS
 CSS imports from `node_modules` requires a bundler such as Vite or
 [`postcss-import`](https://www.npmjs.com/package/postcss-import).
 
@@ -20,15 +20,23 @@ CSS imports from `node_modules` requires a bundler such as Vite or
 
 Develop
 --------------------------------------------------------------------------------
-1. Install: `git clone https://github.com/dmkishi/css-reset.git && pnpm install`
+1. Install:
+     ```sh
+     git clone https://github.com/dmkishi/css-reset.git
+     cd css-reset
+     pnpm install
+     ```
 1. Edit and lint with `pnpm lint`
-1. Update version numbers and changelog and commit
+1. Update version numbers and changelog and commit.
 1. Publish: `git push && pnpm publish`
    - Both actions run the linter and builder as necessary.
    - If you are not logged in, `pnpm login`
 
 Changelog
 --------------------------------------------------------------------------------
+### v1.3.1 (2026-5-1)
+- Improve README.
+
 ### v1.3.0 (2026-5-1)
 - Add padding reset to `<ul>`.
 - Improve README.
