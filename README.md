@@ -68,6 +68,10 @@ Develop
 
 Changelog
 --------------------------------------------------------------------------------
+### v1.3.2 (2026-11-19)
+- Add instructions for usage without a bundler.
+- Improve Husky script, pre-push.
+
 ### v1.3.1 (2026-5-1)
 - Improve README.
 
