@@ -18,6 +18,38 @@ CSS imports from `node_modules` requires a bundler such as Vite or
 @import '@dmkishi/css-reset/dist/reset.css' layer(reset);
 ```
 
+Install without a bundler
+--------------------------------------------------------------------------------
+Pick one:
+
+- CDN `<link>` (simplest). Load it before your own stylesheet:
+  ```html
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dmkishi/css-reset@1.3.2/dist/reset.min.css">
+  <link rel="stylesheet" href="styles.css">
+  ```
+- CDN `@import` with a layer. Put it before any other rules in your stylesheet:
+  ```css
+  @import url('https://cdn.jsdelivr.net/npm/@dmkishi/css-reset@1.3.2/dist/reset.min.css') layer(reset);
+  ```
+  The browser requests the reset only after your stylesheet has downloaded.
+- Copy the file into your project, e.g. download the CDN URL above to
+  `vendor/reset.css`. Load it with `<link>` or a relative import:
+  ```css
+  @import url('vendor/reset.css') layer(reset);
+  ```
+- npm without a bundler. This works only if your server publishes `node_modules`;
+  otherwise, copy the file:
+  ```css
+  @import url('/node_modules/@dmkishi/css-reset/dist/reset.css') layer(reset);
+  ```
+
+### Notes
+- **Version pinning**: `@1.3.2` locks one exact version, while `@1` follows 1.x
+  releases. Use an exact version in production.
+- **Layer order**: `<link>` can't put a stylesheet in a cascade layer; only
+  `@import` can. If you use other layers, declare their order first, e.g.
+  `@layer reset, base, components;`.
+
 Develop
 --------------------------------------------------------------------------------
 1. Install:
@@ -27,7 +59,9 @@ Develop
      pnpm install
      ```
 1. Edit and lint with `pnpm lint`
-1. Update version numbers and changelog and commit.
+1. Update:
+   - **README.md**: Version numbers in the CDN URLs and add an entry to the Changelog.
+   - **package.json**: Version number.
 1. Publish: `git push && pnpm publish`
    - Both actions run the linter and builder as necessary.
    - If you are not logged in, `pnpm login`
